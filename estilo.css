@@ -53,7 +53,7 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== TARJETA DE REGISTRO 
+/* ===== TARJETA DE REGISTRO ==== */
 .login-card.registro-ancho {
     max-width: 750px; 
     padding: 30px 40px;
