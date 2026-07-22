@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI CRM - Registro de Clientes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="login-container">
+        <section class="login-card registro-ancho">
+            <header>
+                <h1>Registro de Clientes</h1>
+                <p>Complete la información para dar de alta a un nuevo clientes</p>
+                <p>Información General del Cliente</p>
+                
+            </header>
+
+            <form action="#" method="POST">
+                
+                <fieldset class="grid-fieldset">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej.Fabiana Hernández">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="nombre">Cédula de Identidad</label>
+                        <input type="text" id="cedula" name="cedula" required minlength="8" maxlength="10" placeholder="Ej.33146191(8-10 dígitos)">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="nombre">Número Telefónico</label>
+                        <input type="text" id="telefono" name="telefono" required maxlength="11" placeholder="Ej.0424-5231537(11 dígitos)">
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Tipo de Cliente</label>
+                        <div class="radio-container">
+                            <label><input type="radio" id="natural" name="tipo_cliente" checked> Natural</label>
+                            <label><input type="radio" id="Juridico" name="tipo_cliente"> Jurídico</label>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                         <label for="sector">Sector / Industria</label>
+                          <select id="sector" name="sector">
+                            <option value="" disabled selected>--- Seleccionar Sector ---</option>
+                            <option value="Tecnología">Tecnología e Informática</option>
+                            <option value="comercio">Comercio y Servicios</option>
+                            <option value="salud">Salud y Farmacia</option>
+                            <option value="educacion">Educación y Capacitación</option>
+                        </select>
+                    </div>
+                        
+                    <div class="form-group full-width">
+                        <label for="text">Dirección Habitación / Fiscal (Opcional):</label>
+                        <input type="text" id="direccion" name="direccion" required placeholder="Ingrese la dirección detallada..">
+                    </div>
+
+                
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Registrar Cliente</button>
+
+               
+
+            </form>
+
+
+            <footer>
+                <a href="login_fabiana.html">¿Ya tienes cuenta? Inicia sesión aquí</a>
+            </footer>
+        </section>
+    </main>
+    
+</body>
+</html>
